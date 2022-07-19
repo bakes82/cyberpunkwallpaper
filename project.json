@@ -1,0 +1,338 @@
+{
+	"approved" : true,
+	"contentrating" : "Everyone",
+	"description" : "2021.12.14 \nvisualizer updated\n2021.12.28\ncss updated",
+	"file" : "index.html",
+	"general" : 
+	{
+		"properties" : 
+		{
+			"boostaudioeffect" : 
+			{
+				"fraction" : true,
+				"index" : 50,
+				"max" : 25,
+				"min" : 1,
+				"order" : 104,
+				"precision" : 1,
+				"step" : 0.5,
+				"text" : "Boost Audio Effect",
+				"type" : "slider",
+				"value" : 3.5
+			},
+			"dateformat" : 
+			{
+				"condition" : "showdate.value == true",
+				"index" : 3,
+				"order" : 103,
+				"text" : "Date Format DayJS",
+				"type" : "textinput",
+				"value" : "ddd.MM.DD.YYYY"
+			},
+			"maxlogtime" : 
+			{
+				"condition" : "showrandomlogmessages.value == true",
+				"fraction" : false,
+				"index" : 26,
+				"max" : 100000,
+				"min" : 1,
+				"order" : 126,
+				"precision" : 0,
+				"step" : 1,
+				"text" : "Max Log Message Delay (MS)",
+				"type" : "slider",
+				"value" : 15000
+			},
+			"maxverticalbars" : 
+			{
+				"fraction" : false,
+				"index" : 4,
+				"max" : 15,
+				"min" : 3,
+				"order" : 104,
+				"text" : "Max Vertical Bars",
+				"type" : "slider",
+				"value" : 3
+			},
+			"message1" : 
+			{
+				"condition" : "showrandomlogmessages.value == true",
+				"index" : 7,
+				"order" : 107,
+				"text" : "Msg 1 (XXXXXkb)",
+				"type" : "textinput",
+				"value" : "payload sent"
+			},
+			"message10" : 
+			{
+				"condition" : "showrandomlogmessages.value == true && ((message1visibilitypercent.value + message2visibilitypercent.value + message3visibilitypercent.value + message4visibilitypercent.value + message5visibilitypercent.value + message6visibilitypercent.value + message7visibilitypercent.value + message8visibilitypercent.value + message9visibilitypercent.value) < 100)",
+				"index" : 25,
+				"order" : 125,
+				"text" : "Msg 10",
+				"type" : "textinput",
+				"value" : "failed"
+			},
+			"message10visibilitypercent" : 
+			{
+				"condition" : "showrandomlogmessages.value == true && ((message1visibilitypercent.value + message2visibilitypercent.value + message3visibilitypercent.value + message4visibilitypercent.value + message5visibilitypercent.value + message6visibilitypercent.value + message7visibilitypercent.value + message8visibilitypercent.value + message9visibilitypercent.value) < 100)",
+				"fraction" : true,
+				"index" : 24,
+				"max" : 100,
+				"min" : 0,
+				"order" : 124,
+				"precision" : 2,
+				"step" : 0.01,
+				"text" : "Msg 10 Chance",
+				"type" : "slider",
+				"value" : 0
+			},
+			"message1visibilitypercent" : 
+			{
+				"condition" : "showrandomlogmessages.value == true",
+				"fraction" : true,
+				"index" : 6,
+				"max" : 100,
+				"min" : 0,
+				"order" : 106,
+				"precision" : 2,
+				"step" : 0.01,
+				"text" : "Msg 1 Chance",
+				"type" : "slider",
+				"value" : 0
+			},
+			"message2" : 
+			{
+				"condition" : "showrandomlogmessages.value == true && (message1visibilitypercent.value < 100)",
+				"index" : 9,
+				"order" : 109,
+				"text" : "Msg 2 (XXXX)",
+				"type" : "textinput",
+				"value" : "error code"
+			},
+			"message2visibilitypercent" : 
+			{
+				"condition" : "showrandomlogmessages.value == true && (message1visibilitypercent.value < 100)",
+				"fraction" : true,
+				"index" : 8,
+				"max" : 100,
+				"min" : 0,
+				"order" : 108,
+				"precision" : 2,
+				"step" : 0.01,
+				"text" : "Msg 2 Chance",
+				"type" : "slider",
+				"value" : 0
+			},
+			"message3" : 
+			{
+				"condition" : "showrandomlogmessages.value == true && ((message1visibilitypercent.value + message2visibilitypercent.value) < 100)",
+				"index" : 11,
+				"order" : 111,
+				"text" : "Msg 3 (XXXXX)",
+				"type" : "textinput",
+				"value" : "blocked port"
+			},
+			"message3visibilitypercent" : 
+			{
+				"condition" : "showrandomlogmessages.value == true && ((message1visibilitypercent.value + message2visibilitypercent.value) < 100)",
+				"fraction" : true,
+				"index" : 10,
+				"max" : 100,
+				"min" : 0,
+				"order" : 110,
+				"precision" : 2,
+				"step" : 0.01,
+				"text" : "Msg3 Chance",
+				"type" : "slider",
+				"value" : 0
+			},
+			"message4" : 
+			{
+				"condition" : "showrandomlogmessages.value == true && ((message1visibilitypercent.value + message2visibilitypercent.value + message3visibilitypercent.value) < 100)",
+				"index" : 13,
+				"order" : 113,
+				"text" : "Msg 4 (XXXXXms)",
+				"type" : "textinput",
+				"value" : "lost signal"
+			},
+			"message4visibilitypercent" : 
+			{
+				"condition" : "showrandomlogmessages.value == true && ((message1visibilitypercent.value + message2visibilitypercent.value + message3visibilitypercent.value) < 100)",
+				"fraction" : true,
+				"index" : 12,
+				"max" : 100,
+				"min" : 0,
+				"order" : 112,
+				"precision" : 2,
+				"step" : 0.01,
+				"text" : "Msg4 Chance",
+				"type" : "slider",
+				"value" : 0
+			},
+			"message5" : 
+			{
+				"condition" : "showrandomlogmessages.value == true && ((message1visibilitypercent.value + message2visibilitypercent.value + message3visibilitypercent.value + message4visibilitypercent.value) < 100)",
+				"index" : 15,
+				"order" : 115,
+				"text" : "Msg 5",
+				"type" : "textinput",
+				"value" : "ok"
+			},
+			"message5visibilitypercent" : 
+			{
+				"condition" : "showrandomlogmessages.value == true && ((message1visibilitypercent.value + message2visibilitypercent.value + message3visibilitypercent.value + message4visibilitypercent.value) < 100)",
+				"fraction" : true,
+				"index" : 14,
+				"max" : 100,
+				"min" : 0,
+				"order" : 114,
+				"precision" : 2,
+				"step" : 0.01,
+				"text" : "Msg 5 Chance",
+				"type" : "slider",
+				"value" : 0
+			},
+			"message6" : 
+			{
+				"condition" : "showrandomlogmessages.value == true && ((message1visibilitypercent.value + message2visibilitypercent.value + message3visibilitypercent.value + message4visibilitypercent.value + message5visibilitypercent.value) < 100)",
+				"index" : 17,
+				"order" : 117,
+				"text" : "Msg 6",
+				"type" : "textinput",
+				"value" : "completed"
+			},
+			"message6visibilitypercent" : 
+			{
+				"condition" : "showrandomlogmessages.value == true && ((message1visibilitypercent.value + message2visibilitypercent.value + message3visibilitypercent.value + message4visibilitypercent.value + message5visibilitypercent.value) < 100)",
+				"fraction" : true,
+				"index" : 16,
+				"max" : 100,
+				"min" : 0,
+				"order" : 116,
+				"precision" : 2,
+				"step" : 0.01,
+				"text" : "Msg 6 Chance",
+				"type" : "slider",
+				"value" : 0
+			},
+			"message7" : 
+			{
+				"condition" : "showrandomlogmessages.value == true && ((message1visibilitypercent.value + message2visibilitypercent.value + message3visibilitypercent.value + message4visibilitypercent.value + message5visibilitypercent.value + message6visibilitypercent.value) < 100)",
+				"index" : 19,
+				"order" : 119,
+				"text" : "Msg 7",
+				"type" : "textinput",
+				"value" : "unknown"
+			},
+			"message7visibilitypercent" : 
+			{
+				"condition" : "showrandomlogmessages.value == true && ((message1visibilitypercent.value + message2visibilitypercent.value + message3visibilitypercent.value + message4visibilitypercent.value + message5visibilitypercent.value + message6visibilitypercent.value) < 100)",
+				"fraction" : true,
+				"index" : 18,
+				"max" : 100,
+				"min" : 0,
+				"order" : 118,
+				"precision" : 2,
+				"step" : 0.01,
+				"text" : "Msg 7 Chance",
+				"type" : "slider",
+				"value" : 0
+			},
+			"message8" : 
+			{
+				"condition" : "showrandomlogmessages.value == true && ((message1visibilitypercent.value + message2visibilitypercent.value + message3visibilitypercent.value + message4visibilitypercent.value + message5visibilitypercent.value + message6visibilitypercent.value + message7visibilitypercent.value) < 100)",
+				"index" : 21,
+				"order" : 121,
+				"text" : "Msg 8",
+				"type" : "textinput",
+				"value" : "disconnected"
+			},
+			"message8visibilitypercent" : 
+			{
+				"condition" : "showrandomlogmessages.value == true && ((message1visibilitypercent.value + message2visibilitypercent.value + message3visibilitypercent.value + message4visibilitypercent.value + message5visibilitypercent.value + message6visibilitypercent.value + message7visibilitypercent.value) < 100)",
+				"fraction" : true,
+				"index" : 20,
+				"max" : 100,
+				"min" : 0,
+				"order" : 120,
+				"precision" : 2,
+				"step" : 0.01,
+				"text" : "Msg 8 Chance",
+				"type" : "slider",
+				"value" : 0
+			},
+			"message9" : 
+			{
+				"condition" : "showrandomlogmessages.value == true && ((message1visibilitypercent.value + message2visibilitypercent.value + message3visibilitypercent.value + message4visibilitypercent.value + message5visibilitypercent.value + message6visibilitypercent.value + message7visibilitypercent.value + message8visibilitypercent.value) < 100)",
+				"index" : 23,
+				"order" : 123,
+				"text" : "Msg 9",
+				"type" : "textinput",
+				"value" : "connection closed"
+			},
+			"message9visibilitypercent" : 
+			{
+				"condition" : "showrandomlogmessages.value == true && ((message1visibilitypercent.value + message2visibilitypercent.value + message3visibilitypercent.value + message4visibilitypercent.value + message5visibilitypercent.value + message6visibilitypercent.value + message7visibilitypercent.value + message8visibilitypercent.value) < 100)",
+				"fraction" : true,
+				"index" : 22,
+				"max" : 100,
+				"min" : 0,
+				"order" : 122,
+				"precision" : 2,
+				"step" : 0.01,
+				"text" : "Msg 9 Chance",
+				"type" : "slider",
+				"value" : 0
+			},
+			"schemecolor" : 
+			{
+				"order" : 0,
+				"text" : "ui_browse_properties_scheme_color",
+				"type" : "color",
+				"value" : "0 0 0"
+			},
+			"showdate" : 
+			{
+				"index" : 2,
+				"order" : 102,
+				"text" : "Show Date",
+				"type" : "bool",
+				"value" : true
+			},
+			"showrandomlogmessages" : 
+			{
+				"index" : 5,
+				"order" : 105,
+				"text" : "Show Random Log Messages (Left)",
+				"type" : "bool",
+				"value" : true
+			},
+			"showtime" : 
+			{
+				"index" : 0,
+				"order" : 100,
+				"text" : "Show Time",
+				"type" : "bool",
+				"value" : true
+			},
+			"timeformat" : 
+			{
+				"condition" : "showtime.value == true",
+				"index" : 1,
+				"order" : 101,
+				"text" : "Time Format DayJS",
+				"type" : "textinput",
+				"value" : "hh.mm.ss.A"
+			}
+		},
+		"supportsaudioprocessing" : true
+	},
+	"preview" : "preview.jpg",
+	"tags" : [ "Cyberpunk" ],
+	"title" : "No Title",
+	"type" : "web",
+	"version" : 4,
+	"visibility" : "public",
+	"workshopid" : "2681264792",
+	"workshopurl" : "steam://url/CommunityFilePage/2681264792"
+}
