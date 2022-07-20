@@ -25,28 +25,28 @@ class LeftTextBuild{
         this.timer = Math.random() * 500 + 500
 	
 		this.showRandom = true
-		this.msg1percent = .13
+		this.msg1percent = 10
 		this.msg1 = "payload sent" // MSG Plus (10000kb)
-		this.msg2percent = .0689
+		this.msg2percent = 10
 		this.msg2 = "error code" // MSG Plus (1000)
-		this.msg3percent = .0817
+		this.msg3percent = 10
 		this.msg3 = "blocked port" // MSG Plus (10000)
-		this.msg4percent = .0825
+		this.msg4percent = 10
 		this.msg4 = "lost signal" // MSG Plus (60000ms)
-		this.msg5percent = .0678
+		this.msg5percent = 10
 		this.msg5 = "ok"
-		this.msg6percent = .236
+		this.msg6percent = 10
 		this.msg6 = "completed"
-		this.msg7percent = .0569
+		this.msg7percent = 10
 		this.msg7 = "ok"
-		this.msg8percent = .015
+		this.msg8percent = 10
 		this.msg8 = "disconnected"
-		this.msg9percent = .001
+		this.msg9percent = 10
 		this.msg9 = "unknown"
-		this.msg10percent = .1189
+		this.msg10percent = 10
 		this.msg10 = "connection closed"
 		this.defaultMsg = "found"
-		this.maxLogMessageDelay =60000
+		this.maxLogMessageDelay = 60000
 		
 		var values = []
 	
@@ -56,6 +56,26 @@ class LeftTextBuild{
 
     // init
     init(){
+		this.msg1percent = window.message1percent
+		this.msg1 = window.message1
+		this.msg2percent = window.message2percent
+		this.msg2 = window.message2
+		this.msg3percent = window.message3percent
+		this.msg3 = window.message3
+		this.msg4percent = window.message4percent
+		this.msg4 = window.message4
+		this.msg5percent = window.message5percent
+		this.msg5 = window.message5
+		this.msg6percent = window.message6percent
+		this.msg6 =window.message6
+		this.msg7percent = window.message7percent
+		this.msg7 = window.message7
+		this.msg8percent = window.message8percent
+		this.msg8 = window.message8
+		this.msg9percent = window.message9percent
+		this.msg9 = window.message9
+		this.msg10percent = window.message10percent
+		this.msg10 = window.message10
         this.create()
     }
 
@@ -286,8 +306,6 @@ class LeftTextBuild{
 				}
 			}
 		}
-		
-		//msg += "(" + choice +")" + values.length
 		        
         const temp = this.el.map((e, i) => i === 0 ? e.text.slice(0, e.text.length - 1) + msg  : e.text)
         

@@ -252,86 +252,13 @@ updateProps(properties){
 					{
 						window.boostAudioEffect = properties.boostaudioeffect.value
 					}
-										
-					var per10 = window.message1percent + window.message2percent + window.message3percent + window.message4percent + window.message5percent + window.message6percent + window.message7percent + window.message8percent + window.message9percent
-					if( per10 >= 1)
-					{
-						window.message10percent = 0 
-					}
 					
-					var per9 = window.message1percent + window.message2percent + window.message3percent + window.message4percent + window.message5percent + window.message6percent + window.message7percent + window.message8percent
-					if( per9 >= 1)
-					{
-						window.message10percent = 0 
-						window.message9percent = 0
-					}
 					
-					var per8 = window.message1percent + window.message2percent + window.message3percent + window.message4percent + window.message5percent + window.message6percent + window.message7percent
-					if( per8 >= 1)
-					{
-						window.message10percent = 0 
-						window.message9percent = 0
-						window.message8percent = 0
-					}
 					
-					var per7 = window.message1percent + window.message2percent + window.message3percent + window.message4percent + window.message5percent + window.message6percent
-					if( per7 >= 1)
+					var per1 = window.message1percent
+					if( per1 >= 1)
 					{
-						window.message10percent = 0 
-						window.message9percent = 0
-						window.message8percent = 0
-						window.message7percent = 0
-					}
-					
-					var per6 = window.message1percent + window.message2percent + window.message3percent + window.message4percent + window.message5percent
-					if( per6 > 1)
-					{
-						window.message10percent = 0 
-						window.message9percent = 0
-						window.message8percent = 0
-						window.message7percent = 0
-						window.message6percent = 0
-					}
-					
-					var per5 = window.message1percent + window.message2percent + window.message3percent + window.message4percent
-					if( per5 >= 1)
-					{
-						window.message10percent = 0 
-						window.message9percent = 0
-						window.message8percent = 0
-						window.message7percent = 0
-						window.message6percent = 0
-						window.message5percent = 0
-					}
-					
-					var per4 = window.message1percent + window.message2percent + window.message3percent
-					if( per4 >= 1)
-					{
-						window.message10percent = 0 
-						window.message9percent = 0
-						window.message8percent = 0
-						window.message7percent = 0
-						window.message6percent = 0
-						window.message5percent = 0
-						window.message4percent = 0
-					}
-					
-					var per3 = window.message1percent + window.message2percent
-					if( per3 >= 1)
-					{
-						window.message10percent = 0 
-						window.message9percent = 0
-						window.message8percent = 0
-						window.message7percent = 0
-						window.message6percent = 0
-						window.message5percent = 0
-						window.message4percent = 0
-						window.message3percent = 0
-					}
-					
-					var per2 = window.message1percent
-					if( per2 >= 1)
-					{
+						//alert(1 + " - " + per1)
 						window.message10percent = 0 
 						window.message9percent = 0
 						window.message8percent = 0
@@ -341,6 +268,108 @@ updateProps(properties){
 						window.message4percent = 0
 						window.message3percent = 0
 						window.message2percent = 0
+						window.message1percent = 1
+
+					}
+					
+					var per2 = window.message1percent + window.message2percent
+					if( per2 >= 1)
+					{
+						//alert(2 + " - " + per2)
+						window.message10percent = 0 
+						window.message9percent = 0
+						window.message8percent = 0
+						window.message7percent = 0
+						window.message6percent = 0
+						window.message5percent = 0
+						window.message4percent = 0
+						window.message3percent = 0
+						window.message2percent = 1-per1
+						
+					}
+					
+					var per3 = window.message1percent + window.message2percent + window.message3percent
+					if( per3 >= 1)
+					{
+						//alert(3 + " - " + per3)
+						window.message10percent = 0 
+						window.message9percent = 0
+						window.message8percent = 0
+						window.message7percent = 0
+						window.message6percent = 0
+						window.message5percent = 0
+						window.message4percent = 0
+						window.message3percent = 1-per2
+						
+					}
+					
+					var per4 = window.message1percent + window.message2percent + window.message3percent + window.message4percent
+					if( per4 >= 1)
+					{
+						//alert(4 + " : " + (1 - per3))
+						window.message10percent = 0 
+						window.message9percent = 0
+						window.message8percent = 0
+						window.message7percent = 0
+						window.message6percent = 0
+						window.message5percent = 0
+						window.message4percent = 1-per3
+						
+					}
+					
+					var per5 = window.message1percent + window.message2percent + window.message3percent + window.message4percent + window.message5percent
+					if( per5 >= 1)
+					{
+						//alert(5 + " - " + per5)
+						window.message10percent = 0 
+						window.message9percent = 0
+						window.message8percent = 0
+						window.message7percent = 0
+						window.message6percent = 0
+						window.message5percent = 1-per4
+						
+					}
+										
+						
+					var per6 = window.message1percent + window.message2percent + window.message3percent + window.message4percent + window.message5percent + window.message6percent
+					if( per6 >= 1)
+					{
+						//alert(6 + " - " + per6)
+						window.message10percent = 0 
+						window.message9percent = 0
+						window.message8percent = 0
+						window.message7percent = 0
+						window.message6percent = 1-per5
+						
+					}
+					
+					
+					var per7 = window.message1percent + window.message2percent + window.message3percent + window.message4percent + window.message5percent + window.message6percent + window.message7percent
+					if( per7 >= 1)
+					{
+						//alert(7 + " - " + per7)
+						window.message10percent = 0 
+						window.message9percent = 0
+						window.message8percent = 0
+						window.message7percent = 1-per5
+						
+					}
+						
+					var per8 = window.message1percent + window.message2percent + window.message3percent + window.message4percent + window.message5percent + window.message6percent + window.message7percent + window.message8percent
+					if( per8 >= 1)
+					{
+						//alert(8 + " - " + per8)
+						window.message10percent = 0 
+						window.message9percent = 0
+						window.message8percent = 1-per7
+					}							
+										
+					var per9 = window.message1percent + window.message2percent + window.message3percent + window.message4percent + window.message5percent + window.message6percent + window.message7percent + window.message8percent + window.message9percent
+					if( per9 >= 1)
+					{
+						//alert(9 + " - " + per9)
+						window.message10percent = 0 
+						window.message9percent = 1-per8
 					}
 					
 					//There is no per1, should always store value from first option
